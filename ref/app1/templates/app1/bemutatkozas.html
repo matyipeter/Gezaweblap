@@ -1,0 +1,15 @@
+{% extends "app1/base.html" %}
+{% load static %}
+{% block content %}
+    
+    <section class='container'>
+        <p class="bemutatkozas-szoveg">Márton Géza vagyok, és a szívem a dísznövények és kertek iránt dobog. Kertészeti szakképesítésemet 1995-ben szereztem a Magyar Gyula Kertészeti Szakközépiskolában. Több mint 25 éve állítom szolgáltatásaimat ügyfeleim rendelkezésére, szakmai tapasztalattal, precíz munkavégzéssel és profi eszközökkel a kezemben.</p>
+        <p class="bemutatkozas-szoveg">Specializációim közé tartozik a kertgondozás és növénykarbantartás, ahol nem csak a növényeket, de a kert egészét gondozom, hogy a természet harmóniáját tükrözze. Emellett széles körű tavaszi kertindító karbantartást nyújtok, és rendszeres kertgondozási csomagokkal állunk az ügyfelek rendelkezésére, hogy kertjük mindig a legjobb formájában ragyogjon.</p>
+        <p class="bemutatkozas-szoveg">A kert nem csupán növények gyűjteménye, hanem egy személyes oázis, és célom, hogy minden ügyfelem kertje egyedi, az ő egyéni stílusukat tükröző területté váljon. Kreatív kertépítési munkákban és felújításokban is szakértő vagyok, és minden projektet lelkesedéssel kezelek, mintha saját kertem lenne.</p>
+        <p class="bemutatkozas-szoveg">Ha Ön is szeretné kertjét egy tapasztalt és elkötelezett kertészre bízni, várom a kapcsolatfelvételt. Bízom benne, hogy együtt alakíthatjuk át kertjét egy élő, virágzó paradicsommá!</p>
+    </section>
+    <section class="text-center container">
+        <img class='img-fluid' src="{% static 'app1/images/geza.jpg' %}" alt="Profilkep" width="40%">
+    </section>
+
+{% endblock content %}

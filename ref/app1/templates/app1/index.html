@@ -1,0 +1,19 @@
+{% extends "app1/base.html" %}
+
+{% load static %}
+{% block content %}
+<section>
+    <!-- Your content goes here -->
+    <h2>About Me</h2>
+    <p>I am Marton Geza, a trustworthy and conscientious gardener with over 25 years of experience...</p>
+</section>
+
+<section>
+    <!-- Your content goes here -->
+    <h2>Services</h2>
+    <p>My expertise lies in gardening, maintenance, lawn mowing, and garden building...</p>
+    {% comment %} {% if ref.image %}
+        <img class="img-fluid" src="{{ ref.image.url }}" alt="{{ref.image.name}}" width="500px" height="200px">
+    {% endif %} {% endcomment %}
+</section>
+{% endblock content %}

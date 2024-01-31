@@ -1,0 +1,17 @@
+{% extends "app1/base.html" %}
+
+{% block content %}
+<div>
+    <div class='mt-5 services-container'>
+        {% for ref in object_list  %}
+            <a href="#" >
+                <div class="service-card">
+                    <h2>{{ref.name}}</h2>                
+                    <img src="{{ ref.image.url }}" style="width:80%;">
+                </div>
+            </a>
+        {% endfor object_list %}
+
+    </div>
+</div>
+{% endblock content %}

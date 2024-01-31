@@ -1,0 +1,47 @@
+{% extends "app1/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="container" style="padding:10px;">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <h2 class="text-center mb-4">Írj egy üzenetet!</h2>
+
+                <!-- Contact Form -->
+                <form class="p-3" method="post">
+                    {% csrf_token %}
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="fname">Vezetéknév:</label>
+                        <input type="text" class="form-control" id="fname" name="fname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Keresztnév:</label>
+                        <input type="text" class="form-control" id="lname" name="lname" required>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <!-- Message Textarea -->
+                    <div class="form-group">
+                        <label for="message">Fejtsd ki kérlek miben tudok segíteni:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="gardening-btn btn btn-block">Submit</button>
+
+                </form>
+                <!-- End Contact Form -->
+
+            </div>
+        </div>
+</section>
+
+{% endblock content %}
